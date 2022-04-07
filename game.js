@@ -57,6 +57,17 @@ scene("game", ({ level, score }) => {
             'a        b',
             'fddddddddh',
         ],
+        [
+            'gcccccccce',
+            'a        b',
+            'n   m    n',
+            'a        b',
+            'i        b',
+            'a    k   b',
+            'n   m    n',
+            'a        b',
+            'fddddddddh',
+        ],
 
     ]
 
@@ -164,7 +175,7 @@ scene("game", ({ level, score }) => {
         scoreLabel.text = scoreLabel.value
     })
 
-    const SLICER_SPEED = 100
+    const SLICER_SPEED = 200
 
     action('slicer', (s) => {
         s.move(s.dir * SLICER_SPEED, 0)
@@ -174,7 +185,7 @@ scene("game", ({ level, score }) => {
         s.dir = -s.dir
     })
 
-    const SKELETOR_SPEED = 60
+    const SKELETOR_SPEED = 120
 
     action('skeletor', (s) => {
         s.move(0, s.dir * SKELETOR_SPEED)
